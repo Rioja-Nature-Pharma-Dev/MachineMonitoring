@@ -16,6 +16,7 @@ public sealed class MqttGpioListener
     private readonly string _mqttBroker;
     private readonly int _mqttPort;
     private readonly string _machineCode;
+    private readonly GpioEventHandlers _gpioHandlers;
     private IMqttClient? _mqttClient;
 
     public MqttGpioListener(
@@ -34,6 +35,11 @@ public sealed class MqttGpioListener
         _mqttBroker = mqttBroker;
         _mqttPort = mqttPort;
         _machineCode = machineCode;
+        _gpioHandlers = new GpioEventHandlers(
+            productionCounterRepository,
+            machineRepository,
+            productionOrderRepository,
+            clock);
     }
 
     public async Task StartAsync(CancellationToken cancellationToken = default)
@@ -114,60 +120,28 @@ public sealed class MqttGpioListener
 
     private async Task HandleUnitCountEvent()
     {
-        try
+        var machine = await _machineRepository.GetByCodeAsync(_machineCode);
+        if (machine != null)
         {
-            // Get Cremer machine
-            var machine = await _machineRepository.GetByCodeAsync(_machineCode);
-            if (machine == null)
-            {
-                Console.WriteLine($"[GPIO 23] Máquina {_machineCode} no encontrada");
-                return;
-            }
-
-            // Get active production order
-            var orders = await _productionOrderRepository.GetByStatusAsync(
-                Domain.Enums.ProductionOrderStatus.InProgress);
-            var activeOrder = orders.FirstOrDefault(o => o.MachineId == machine.Id);
-
-            if (activeOrder == null)
-            {
-                Console.WriteLine("[GPIO 23] No hay orden activa");
-                return;
-            }
-
-            // Increment counter
-            var counter = await _productionCounterRepository.GetByOrderIdAsync(activeOrder.Id);
-            if (counter == null)
-            {
-                Console.WriteLine("[GPIO 23] Contador no encontrado");
-                return;
-            }
-
-            var handler = new IncrementProductionCounterHandler(_productionCounterRepository, _clock);
-            var command = new IncrementProductionCounterCommand(activeOrder.Id);
-            await handler.HandleAsync(command);
-
-            Console.WriteLine($"[GPIO 23] Contador incrementado para orden {activeOrder.OrderCode}");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"[GPIO 23 Error] {ex.Message}");
+            await _gpioHandlers.HandleUnitCountAsync(machine.Id);
         }
     }
 
     private async Task HandleWeightErrorEvent()
     {
-        Console.WriteLine("[GPIO 22] Error de peso detectado");
-        // TODO: Implement weight error handling logic
-        // Could mark units as bad in the counter, trigger alert, etc.
-        await Task.CompletedTask;
+        var machine = await _machineRepository.GetByCodeAsync(_machineCode);
+        if (machine != null)
+        {
+            await _gpioHandlers.HandleWeightErrorAsync(machine.Id);
+        }
     }
 
     private async Task HandleLabelErrorEvent()
     {
-        Console.WriteLine("[GPIO 19] Error de etiqueta detectado");
-        // TODO: Implement label error handling logic
-        // Could mark units as bad in the counter, trigger alert, etc.
-        await Task.CompletedTask;
+        var machine = await _machineRepository.GetByCodeAsync(_machineCode);
+        if (machine != null)
+        {
+            await _gpioHandlers.HandleLabelErrorAsync(machine.Id);
+        }
     }
 }
