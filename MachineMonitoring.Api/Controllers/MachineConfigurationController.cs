@@ -5,34 +5,24 @@ using Microsoft.AspNetCore.Mvc;
 namespace MachineMonitoring.Api.Controllers;
 
 /// <summary>
-/// Configuración avanzada de máquinas
-/// Define parámetros, GPIOs, cálculos personalizados y reglas
+/// Configuracion avanzada de maquinas: parametros, GPIOs, metricas calculadas
 /// </summary>
 [ApiController]
 [Route("api/machines/{machineCode}/config")]
 public sealed class MachineConfigurationController : ControllerBase
 {
-    /// <summary>
-    /// Agregar definición de parámetro a una máquina
-    /// </summary>
-    /// <remarks>
-    /// Define un parámetro que la máquina puede medir o calcular
-    /// Ejemplo: Temperatura, Presión, Velocidad, etc.
-    /// </remarks>
     [HttpPost("parameters")]
-    [ProducesResponseType(typeof(ParameterDefinitionDto), StatusCodes.Status201Created)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ParameterDefinitionDto>> AddParameter(
         string machineCode,
         [FromBody] CreateParameterDefinitionRequest request,
-        [FromServices] IAddParameterDefinitionHandler handler,
+        [FromServices] AddParameterDefinitionHandler handler,
         CancellationToken cancellationToken)
     {
         try
         {
-            var command = new AddParameterDefinitionCommand(machineCode, request);
-            var result = await handler.HandleAsync(command, cancellationToken);
+            var result = await handler.HandleAsync(
+                new AddParameterDefinitionCommand(machineCode, request),
+                cancellationToken);
             return CreatedAtAction(nameof(GetParameter), new { machineCode, parameterId = result.Id }, result);
         }
         catch (Exception ex)
@@ -41,16 +31,11 @@ public sealed class MachineConfigurationController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// Obtener definición de parámetro
-    /// </summary>
     [HttpGet("parameters/{parameterId}")]
-    [ProducesResponseType(typeof(ParameterDefinitionDto), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ParameterDefinitionDto>> GetParameter(
         string machineCode,
         Guid parameterId,
-        [FromServices] IGetParameterDefinitionHandler handler,
+        [FromServices] GetParameterDefinitionHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(
@@ -59,14 +44,10 @@ public sealed class MachineConfigurationController : ControllerBase
         return result != null ? Ok(result) : NotFound();
     }
 
-    /// <summary>
-    /// Listar todos los parámetros de una máquina
-    /// </summary>
     [HttpGet("parameters")]
-    [ProducesResponseType(typeof(IEnumerable<ParameterDefinitionDto>), StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<ParameterDefinitionDto>>> ListParameters(
         string machineCode,
-        [FromServices] IListParametersHandler handler,
+        [FromServices] ListParametersHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(
@@ -75,26 +56,18 @@ public sealed class MachineConfigurationController : ControllerBase
         return Ok(result);
     }
 
-    /// <summary>
-    /// Mapear entrada/GPIO a un parámetro
-    /// </summary>
-    /// <remarks>
-    /// Mapea un GPIO (o MQTT topic) a un parámetro de máquina
-    /// Soporta transformaciones: "valor * 1.5 + 10"
-    /// </remarks>
     [HttpPost("gpio-mappings")]
-    [ProducesResponseType(typeof(GpioMappingDto), StatusCodes.Status201Created)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<GpioMappingDto>> MapGpio(
         string machineCode,
         [FromBody] CreateGpioMappingRequest request,
-        [FromServices] ICreateGpioMappingHandler handler,
+        [FromServices] CreateGpioMappingHandler handler,
         CancellationToken cancellationToken)
     {
         try
         {
-            var command = new CreateGpioMappingCommand(machineCode, request);
-            var result = await handler.HandleAsync(command, cancellationToken);
+            var result = await handler.HandleAsync(
+                new CreateGpioMappingCommand(machineCode, request),
+                cancellationToken);
             return CreatedAtAction(nameof(GetGpioMapping), new { machineCode, mappingId = result.Id }, result);
         }
         catch (Exception ex)
@@ -103,16 +76,11 @@ public sealed class MachineConfigurationController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// Obtener mapeo de GPIO
-    /// </summary>
     [HttpGet("gpio-mappings/{mappingId}")]
-    [ProducesResponseType(typeof(GpioMappingDto), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<GpioMappingDto>> GetGpioMapping(
         string machineCode,
         Guid mappingId,
-        [FromServices] IGetGpioMappingHandler handler,
+        [FromServices] GetGpioMappingHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(
@@ -121,14 +89,10 @@ public sealed class MachineConfigurationController : ControllerBase
         return result != null ? Ok(result) : NotFound();
     }
 
-    /// <summary>
-    /// Listar todos los mapeos de GPIO
-    /// </summary>
     [HttpGet("gpio-mappings")]
-    [ProducesResponseType(typeof(IEnumerable<GpioMappingDto>), StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<GpioMappingDto>>> ListGpioMappings(
         string machineCode,
-        [FromServices] IListGpioMappingsHandler handler,
+        [FromServices] ListGpioMappingsHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(
@@ -137,26 +101,18 @@ public sealed class MachineConfigurationController : ControllerBase
         return Ok(result);
     }
 
-    /// <summary>
-    /// Definir cálculo personalizado (métrica)
-    /// </summary>
-    /// <remarks>
-    /// Define una fórmula para calcular métricas personalizadas
-    /// Ejemplo: "OEE = (availability * performance * quality) / 10000"
-    /// </remarks>
     [HttpPost("calculated-metrics")]
-    [ProducesResponseType(typeof(CalculatedMetricDto), StatusCodes.Status201Created)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<CalculatedMetricDto>> CreateCalculatedMetric(
         string machineCode,
         [FromBody] CreateCalculatedMetricRequest request,
-        [FromServices] ICreateCalculatedMetricHandler handler,
+        [FromServices] CreateCalculatedMetricHandler handler,
         CancellationToken cancellationToken)
     {
         try
         {
-            var command = new CreateCalculatedMetricCommand(machineCode, request);
-            var result = await handler.HandleAsync(command, cancellationToken);
+            var result = await handler.HandleAsync(
+                new CreateCalculatedMetricCommand(machineCode, request),
+                cancellationToken);
             return CreatedAtAction(nameof(GetCalculatedMetric), new { machineCode, metricId = result.Id }, result);
         }
         catch (Exception ex)
@@ -165,16 +121,11 @@ public sealed class MachineConfigurationController : ControllerBase
         }
     }
 
-    /// <summary>
-    /// Obtener definición de métrica calculada
-    /// </summary>
     [HttpGet("calculated-metrics/{metricId}")]
-    [ProducesResponseType(typeof(CalculatedMetricDto), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<CalculatedMetricDto>> GetCalculatedMetric(
         string machineCode,
         Guid metricId,
-        [FromServices] IGetCalculatedMetricHandler handler,
+        [FromServices] GetCalculatedMetricHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(
@@ -183,14 +134,10 @@ public sealed class MachineConfigurationController : ControllerBase
         return result != null ? Ok(result) : NotFound();
     }
 
-    /// <summary>
-    /// Listar métricas calculadas
-    /// </summary>
     [HttpGet("calculated-metrics")]
-    [ProducesResponseType(typeof(IEnumerable<CalculatedMetricDto>), StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<CalculatedMetricDto>>> ListCalculatedMetrics(
         string machineCode,
-        [FromServices] IListCalculatedMetricsHandler handler,
+        [FromServices] ListCalculatedMetricsHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(
@@ -199,15 +146,10 @@ public sealed class MachineConfigurationController : ControllerBase
         return Ok(result);
     }
 
-    /// <summary>
-    /// Obtener configuración completa de la máquina
-    /// </summary>
     [HttpGet("")]
-    [ProducesResponseType(typeof(MachineConfigurationDto), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<MachineConfigurationDto>> GetCompleteConfiguration(
         string machineCode,
-        [FromServices] IGetMachineConfigurationHandler handler,
+        [FromServices] GetMachineConfigurationHandler handler,
         CancellationToken cancellationToken)
     {
         var result = await handler.HandleAsync(

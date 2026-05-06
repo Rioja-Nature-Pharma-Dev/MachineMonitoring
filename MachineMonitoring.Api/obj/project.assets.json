@@ -673,6 +673,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "MachineMonitoring.Contracts": "1.0.0",
           "MachineMonitoring.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "10.0.7"
         },
@@ -2315,7 +2316,6 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
             "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\MachineMonitoring.Application.csproj": {
@@ -2344,7 +2344,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {

@@ -193,6 +193,19 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "MachineMonitoring.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "compile": {
+          "bin/placeholder/MachineMonitoring.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MachineMonitoring.Contracts.dll": {}
+        }
+      },
       "MachineMonitoring.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -552,6 +565,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MachineMonitoring.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MachineMonitoring.Contracts/MachineMonitoring.Contracts.csproj",
+      "msbuildProject": "../MachineMonitoring.Contracts/MachineMonitoring.Contracts.csproj"
+    },
     "MachineMonitoring.Domain/1.0.0": {
       "type": "project",
       "path": "../MachineMonitoring.Domain/MachineMonitoring.Domain.csproj",
@@ -560,6 +578,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "MachineMonitoring.Contracts >= 1.0.0",
       "MachineMonitoring.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 10.0.7"
     ]
@@ -594,9 +613,11 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+            "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Contracts\\MachineMonitoring.Contracts.csproj": {
+              "projectPath": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Contracts\\MachineMonitoring.Contracts.csproj"
+            },
             "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj": {
               "projectPath": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj"
             }
@@ -617,7 +638,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "MachineMonitoring.Application/1.0.0": {
         "dependencies": {
+          "MachineMonitoring.Contracts": "1.0.0",
           "MachineMonitoring.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "10.0.7"
         },
@@ -125,6 +126,17 @@
           }
         }
       },
+      "MachineMonitoring.Contracts/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "runtime": {
+          "MachineMonitoring.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "MachineMonitoring.Domain/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.7"
@@ -213,6 +225,11 @@
       "sha512": "sha512-D5M0Jr551iTgwkZMN9rm0pSkgNLj5quUWQUmQPMZh7k/bnvZTnXRGfE2KuvXf1EEjt/ofD9yw9IumpgdP9QCnw==",
       "path": "microsoft.extensions.primitives/10.0.7",
       "hashPath": "microsoft.extensions.primitives.10.0.7.nupkg.sha512"
+    },
+    "MachineMonitoring.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MachineMonitoring.Domain/1.0.0": {
       "type": "project",

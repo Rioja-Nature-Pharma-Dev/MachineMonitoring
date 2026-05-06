@@ -540,6 +540,9 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
+              "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Contracts\\MachineMonitoring.Contracts.csproj": {
+                "projectPath": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Contracts\\MachineMonitoring.Contracts.csproj"
+              },
               "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj": {
                 "projectPath": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj"
               }

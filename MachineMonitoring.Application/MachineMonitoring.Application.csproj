@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MachineMonitoring.Domain\MachineMonitoring.Domain.csproj" />
+    <ProjectReference Include="..\MachineMonitoring.Contracts\MachineMonitoring.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
