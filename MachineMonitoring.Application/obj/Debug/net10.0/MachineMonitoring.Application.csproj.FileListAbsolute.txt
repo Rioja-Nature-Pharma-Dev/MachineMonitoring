@@ -13,3 +13,4 @@ F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application\bin\Debug\
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application\bin\Debug\net10.0\MachineMonitoring.Domain.pdb
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application\obj\Debug\net10.0\MachineMonitoring.Application.csproj.AssemblyReference.cache
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application\obj\Debug\net10.0\MachineM.9F54C15C.Up2Date
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application\obj\Debug\net10.0\MachineMonitoring.Application.sourcelink.json

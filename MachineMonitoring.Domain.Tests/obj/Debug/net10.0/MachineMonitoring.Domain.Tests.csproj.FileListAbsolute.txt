@@ -104,3 +104,4 @@ F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain.Tests\bin\Debug
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain.Tests\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain.Tests\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain.Tests\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain.Tests\obj\Debug\net10.0\MachineMonitoring.Domain.Tests.sourcelink.json

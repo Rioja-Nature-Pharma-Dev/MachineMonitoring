@@ -18,4 +18,13 @@ public sealed class MachineRepository : IMachineRepository
 
     public Task<Machine?> GetByCodeAsync(string code, CancellationToken cancellationToken = default) =>
         _dbContext.Machines.FirstOrDefaultAsync(x => x.Code == code, cancellationToken);
+
+    public async Task<IReadOnlyList<Machine>> GetAllAsync(CancellationToken cancellationToken = default) =>
+        await _dbContext.Machines.ToListAsync(cancellationToken);
+
+    public async Task AddAsync(Machine machine, CancellationToken cancellationToken = default)
+    {
+        _dbContext.Machines.Add(machine);
+        await _dbContext.SaveChangesAsync(cancellationToken);
+    }
 }

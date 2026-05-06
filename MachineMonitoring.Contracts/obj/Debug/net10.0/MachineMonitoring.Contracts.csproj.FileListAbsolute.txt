@@ -10,3 +10,4 @@ F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\ne
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.pdb
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\ref\MachineMonitoring.Contracts.dll
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.csproj.AssemblyReference.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.sourcelink.json
