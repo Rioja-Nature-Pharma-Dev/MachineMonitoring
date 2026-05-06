@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{rotating}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage[no-math]{fontspec}
+\usepackage{tocloft}
+\usepackage{titletoc}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% -----------------------------
+% Fuentes
+% -----------------------------
+\newfontfamily\lemonBold{LEMONMILK-Bold.otf}[Path=Assets/Fonts/]
+\newfontfamily\lemonReg{LEMONMILK-Regular.otf}[Path=Assets/Fonts/]
+
+% Fuente principal del documento
+\setmainfont[
+  Path=Assets/Fonts/,
+  BoldFont=LEMONMILK-Bold.otf
+]{LEMONMILK-Regular.otf}
+
+% -----------------------------
+% Estilo general
+% -----------------------------
+\setstretch{1.15}
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\definecolor{corporateblack}{HTML}{111111}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  pdftitle={Arquitectura de la Plataforma de Monitorización de Máquinas},
+  pdfauthor={Departamento IT}
+}
+
+% -----------------------------
+% Formato de títulos
+% -----------------------------
+\titleformat{\section}
+  {\Large\lemonBold\color{corporateblack}}
+  {\thesection.}{0.5em}{}
+
+\titleformat{\subsection}
+  {\large\lemonBold\color{corporateblack}}
+  {\thesubsection.}{0.5em}{}
+
+\titleformat{\subsubsection}
+  {\normalsize\lemonBold\color{corporateblack}}
+  {\thesubsubsection.}{0.5em}{}
+
+% -----------------------------
+% Listas
+% -----------------------------
+\setlist[itemize]{topsep=4pt,itemsep=2pt}
+\setlist[enumerate]{topsep=4pt,itemsep=2pt}
+
+\begin{document}
+
+% Portada
+\input{sections/00_cover}
+
+% Índice
+\tableofcontents
+\newpage
+
+% Secciones
+\input{sections/01_introduccion}
+\input{sections/02_objetivo_alcance}
+\input{sections/03_contexto_problema}
+\input{sections/04_arquitectura}
+\input{sections/05_modelo_dominio}
+\input{sections/06_variabilidad_maquinas}
+\input{sections/07_reglas_metricas_alertas}
+\input{sections/08_maquinas}
+\input{sections/09_decisiones_abiertas}
+\input{sections/10_siguientes_pasos}
+
+\end{document}

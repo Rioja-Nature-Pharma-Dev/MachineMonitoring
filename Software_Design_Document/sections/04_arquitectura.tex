@@ -1,0 +1,67 @@
+\section{Arquitectura Propuesta}
+
+\subsection{Principio General}
+
+La arquitectura propuesta se basa en la existencia de un núcleo común de plataforma, capaz de gestionar la recepción, transformación, almacenamiento y exposición de información operativa, combinado con mecanismos de extensión que permitan incorporar el comportamiento específico de cada máquina.
+
+El objetivo de este enfoque es evitar dos extremos poco deseables. Por un lado, se evita un diseño rígido, construido alrededor de una única máquina o de un conjunto cerrado de parámetros. Por otro, también se evita una abstracción excesiva o prematura que complique innecesariamente la implementación inicial del sistema.
+
+La solución se plantea, por tanto, como una plataforma modular, donde la parte común permanezca estable y las diferencias entre máquinas se encapsulen mediante configuraciones, definiciones y lógica especializada allí donde sea necesario.
+
+\subsection{Capas Principales}
+
+La solución .NET se organizará en capas con responsabilidades claramente diferenciadas:
+
+\begin{itemize}
+    \item \textbf{Presentation}: expone la API interna y, en su caso, la interfaz web de consulta y operación.
+    \item \textbf{Application}: contiene los casos de uso, la orquestación funcional y las interfaces que separan la lógica de negocio de los detalles técnicos.
+    \item \textbf{Domain}: representa el modelo de negocio común del sistema, incluyendo máquinas, lecturas, órdenes, pausas, contadores, métricas, alertas y definiciones de reglas.
+    \item \textbf{Infrastructure}: implementa el acceso a PostgreSQL, la integración con MQTT, endpoints externos, servicios auxiliares, logging y demás detalles técnicos.
+    \item \textbf{Worker}: ejecuta tareas en segundo plano relacionadas con ingestión, procesamiento, normalización, reglas y procesos periódicos.
+\end{itemize}
+
+\subsection{Estructura de la Solución}
+
+La solución se estructurará en proyectos independientes dentro de un mismo repositorio:
+
+\begin{itemize}
+    \item \texttt{MachineMonitoring.Api}
+    \item \texttt{MachineMonitoring.Application}
+    \item \texttt{MachineMonitoring.Domain}
+    \item \texttt{MachineMonitoring.Infrastructure}
+    \item \texttt{MachineMonitoring.Worker}
+    \item \texttt{MachineMonitoring.Contracts}
+\end{itemize}
+
+Adicionalmente, se dispondrá de proyectos de prueba separados para las principales capas y de carpetas auxiliares para documentación y despliegue.
+
+\subsection{Flujo General de Información}
+
+A alto nivel, el sistema seguirá el siguiente flujo:
+
+\begin{enumerate}
+    \item Una máquina genera información a través de MQTT, HTTP u otra fuente integrada.
+    \item El sistema registra la información recibida como dato crudo.
+    \item Los datos crudos se transforman a un modelo interno normalizado.
+    \item Sobre los datos normalizados se aplican reglas, cálculos y validaciones.
+    \item El sistema actualiza el estado actual de la máquina, genera alertas si procede y registra métricas u operaciones asociadas.
+    \item La API y los servicios de consulta exponen esta información al resto del sistema o a la interfaz de usuario.
+\end{enumerate}
+
+\subsection{Criterio de Modularidad}
+
+La modularidad del sistema no debe depender únicamente de la separación en proyectos técnicos. También debe reflejarse en la forma de introducir nuevas máquinas y nuevos comportamientos.
+
+La plataforma común debe resolver de manera uniforme aspectos como la persistencia, la trazabilidad, la normalización de datos, la consulta del estado actual y la gestión de alertas. En cambio, los cálculos concretos, las transiciones específicas, los eventos relevantes y ciertos procesos operativos deberán poder implementarse de forma aislada por máquina o por familia de máquinas.
+
+\subsection{Decisión Arquitectónica Principal}
+
+La principal decisión de arquitectura es considerar que la variabilidad entre máquinas forma parte central del problema y no una excepción secundaria. Por ello, el sistema no se construirá alrededor de un modelo fijo de máquina, sino alrededor de una infraestructura común capaz de soportar distintas definiciones de parámetros, distintas reglas de cálculo y distintos comportamientos operativos.
+
+Este criterio permitirá evolucionar la plataforma de forma progresiva, integrando máquinas adicionales sin necesidad de rediseñar el núcleo de la solución en cada iteración.
+
+\subsection{Estado Actual de Implementación}
+
+En el estado actual del proyecto, la solución base ya ha sido creada en .NET con separación por capas y proyectos independientes. El dominio principal se encuentra modelado, la capa de aplicación dispone de los primeros casos de uso orientados a la máquina Cremer y la capa de infraestructura ya incorpora persistencia con Entity Framework Core y PostgreSQL.
+
+Asimismo, se ha generado y aplicado una migración inicial de base de datos, lo que permite comenzar la validación funcional del primer caso real sobre una estructura técnica ya operativa. A partir de este punto, el trabajo se centrará en registrar la máquina Cremer dentro del sistema, exponer endpoints mínimos de operación y completar el flujo de extremo a extremo antes de incorporar la integración MQTT y nuevas máquinas.

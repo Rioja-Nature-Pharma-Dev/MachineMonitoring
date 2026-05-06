@@ -1,0 +1,68 @@
+\section{Modelo de Dominio Común}
+
+\subsection{Objetivo del Modelo de Dominio}
+
+El modelo de dominio común tiene como finalidad representar los conceptos estables de la plataforma, es decir, aquellos elementos que seguirán existiendo con independencia de la máquina concreta que se incorpore al sistema.
+
+Este modelo no pretende describir en detalle todos los comportamientos específicos de cada equipo, sino proporcionar una base coherente sobre la que construir integraciones, reglas, cálculos y procesos operativos particulares.
+
+\subsection{Bloque de Máquinas y Telemetría}
+
+El primer bloque del dominio se centra en la definición estructural de las máquinas y en el tratamiento de los datos recibidos desde el exterior. Dentro de este grupo se incluyen las siguientes entidades principales:
+
+\begin{itemize}
+    \item \texttt{Machine}: representa una máquina física registrada en la plataforma.
+    \item \texttt{MachineInputSource}: define una fuente de entrada asociada a una máquina, como MQTT o un endpoint HTTP.
+    \item \texttt{MachineParameterDefinition}: define los parámetros que una máquina puede manejar.
+    \item \texttt{MachineInputMapping}: relaciona campos externos con parámetros internos del sistema.
+    \item \texttt{MachineReadingRaw}: almacena la información cruda recibida.
+    \item \texttt{MachineReadingNormalized}: representa una lectura ya transformada al modelo interno.
+    \item \texttt{MachineStateSnapshot}: almacena una instantánea del estado consolidado de la máquina.
+    \item \texttt{MachineAlert}: representa una alerta o incidencia operativa.
+\end{itemize}
+
+Este conjunto de entidades constituye la base de monitorización común de la plataforma.
+
+\subsection{Bloque de Producción y Operación}
+
+Algunas máquinas no solo emiten señales técnicas, sino que además participan en procesos operativos de producción. Para estos casos, el dominio incorpora un segundo bloque centrado en la gestión operativa:
+
+\begin{itemize}
+    \item \texttt{ProductionOrder}: representa una orden de producción asociada a una máquina.
+    \item \texttt{ProductionPause}: representa una pausa operativa dentro de una orden.
+    \item \texttt{ProductionCounter}: representa el contador asociado al proceso productivo.
+    \item \texttt{ProductionMetrics}: almacena los resultados de métricas calculadas sobre la producción.
+    \item \texttt{OrderAudit}: registra acciones relevantes realizadas sobre una orden.
+\end{itemize}
+
+Este bloque no implica que todas las máquinas deban utilizar necesariamente el ciclo de producción completo, pero permite soportarlo allí donde sea necesario.
+
+\subsection{Definiciones de Reglas y Comportamientos Variables}
+
+Dado que el comportamiento de cada máquina puede diferir de forma notable, el dominio incorpora también definiciones orientadas a representar variabilidad funcional:
+
+\begin{itemize}
+    \item \texttt{MachineRuleDefinition}: describe reglas operativas o de procesamiento específicas de una máquina.
+    \item \texttt{CalculatedMetricDefinition}: define métricas derivadas que pueden calcularse para una máquina.
+    \item \texttt{AlertRuleDefinition}: define condiciones que pueden generar alertas o incidencias.
+\end{itemize}
+
+Estas entidades permiten documentar, configurar y versionar diferencias entre máquinas sin convertir el núcleo común del sistema en una colección de casos particulares codificados de forma rígida.
+
+\subsection{Enumeraciones y Value Objects}
+
+El dominio también utiliza enumeraciones y objetos de valor para expresar conceptos recurrentes de forma más precisa. Entre ellos se encuentran estados de máquina, severidades de alerta, tipos de fuente de entrada, estados de orden, tipos de pausa y objetos de valor asociados a códigos de parámetro, unidades de medida, valores de parámetro y rutas de campos externos.
+
+El uso de estos elementos permite mejorar la claridad del modelo, reforzar restricciones semánticas y reducir ambigüedad en el tratamiento de datos.
+
+\subsection{Criterio de Diseño}
+
+El criterio seguido en el diseño del dominio es separar claramente tres tipos de información:
+
+\begin{itemize}
+    \item La configuración estructural de la máquina y sus parámetros.
+    \item Los datos operativos y eventos recibidos desde el exterior.
+    \item Los resultados derivados del procesamiento, como estados, métricas y alertas.
+\end{itemize}
+
+Esta separación facilita la mantenibilidad del sistema y reduce el acoplamiento entre la estructura base de la plataforma y el comportamiento particular de cada máquina.

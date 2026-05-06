@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MachineMonitoring.Domain\MachineMonitoring.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\Messaging\" />
+    <Folder Include="DTOs\Machines\" />
+    <Folder Include="DTOs\Alerts\" />
+    <Folder Include="DTOs\Telemetry\" />
+    <Folder Include="UseCases\Machines\" />
+    <Folder Include="UseCases\Alerts\" />
+    <Folder Include="UseCases\Telemetry\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.7" />
+  </ItemGroup>
+
+</Project>

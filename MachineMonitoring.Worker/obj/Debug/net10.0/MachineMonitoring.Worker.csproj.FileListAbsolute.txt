@@ -1,0 +1,17 @@
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Worker.deps.json
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Worker.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Worker.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.AssemblyInfoInputs.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.AssemblyInfo.cs
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.csproj.CoreCompileInputs.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\refint\MachineMonitoring.Worker.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\ref\MachineMonitoring.Worker.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Application.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Domain.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Application.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\bin\Debug\net10.0\MachineMonitoring.Domain.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineMonitoring.Worker.csproj.AssemblyReference.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Worker\obj\Debug\net10.0\MachineM.ADED269B.Up2Date

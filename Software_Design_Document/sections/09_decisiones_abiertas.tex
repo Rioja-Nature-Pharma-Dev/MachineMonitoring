@@ -1,0 +1,15 @@
+\section{Decisiones Abiertas}
+
+A pesar de contar ya con una propuesta arquitectónica inicial sólida, existen varias decisiones que deberán cerrarse durante las siguientes fases del proyecto a medida que aumente el conocimiento funcional y técnico del entorno real.
+
+Una primera decisión relevante es el grado de configurabilidad que se desea alcanzar en la definición de reglas, métricas y alertas. Será necesario determinar hasta qué punto estas capacidades deben poder mantenerse mediante configuración y en qué escenarios resulta más conveniente implementar lógica específica directamente en código.
+
+Otra decisión importante afecta al tratamiento temporal de los datos y al modelo histórico de almacenamiento. Será necesario definir con mayor precisión qué información debe conservarse como histórico completo, qué información debe mantenerse como estado actual y qué criterios de retención, agregación o recálculo resultan adecuados para el sistema.
+
+También deberá concretarse la estrategia de presentación y operación de la interfaz de usuario. Aunque esta decisión no condiciona por completo el núcleo del modelo, sí influye en la forma de organizar ciertos casos de uso, consultas y proyecciones de datos.
+
+Del mismo modo, será necesario decidir cómo se versionarán los cambios de parámetros, reglas y configuraciones de máquina, especialmente cuando dichos cambios puedan afectar a la interpretación histórica de la información o al comportamiento futuro de la plataforma.
+
+Por último, a medida que se incorporen nuevas máquinas, será necesario validar si el modelo común actual cubre correctamente la diversidad real del entorno o si deben introducirse nuevas abstracciones, ajustes o especializaciones adicionales.
+
+Estas decisiones no invalidan la propuesta actual, pero sí deberán formar parte del seguimiento técnico del proyecto para asegurar una evolución ordenada y coherente de la solución.

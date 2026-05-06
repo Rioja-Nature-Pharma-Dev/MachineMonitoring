@@ -1,0 +1,56 @@
+\section{Variabilidad entre Máquinas}
+
+\subsection{Naturaleza del Problema}
+
+La variabilidad entre máquinas no constituye una excepción puntual, sino una característica estructural del sistema a construir. Cada máquina puede presentar diferencias en los datos que envía, en los protocolos de comunicación que utiliza, en la frecuencia de actualización, en la lógica de cálculo y en los procesos operativos asociados.
+
+Por tanto, el diseño del sistema debe asumir desde el inicio que no existe un modelo único y cerrado de máquina aplicable a todos los casos.
+
+\subsection{Dimensiones de Variabilidad}
+
+La variabilidad identificada afecta, al menos, a las siguientes dimensiones:
+
+\begin{itemize}
+    \item \textbf{Fuentes de datos}: una máquina puede integrarse mediante MQTT, HTTP u otros mecanismos.
+    \item \textbf{Parámetros}: cada máquina puede exponer campos distintos, con diferente semántica, unidades y tipos de dato.
+    \item \textbf{Transformaciones}: los datos recibidos pueden requerir mapeos, conversiones o normalizaciones específicas.
+    \item \textbf{Reglas de negocio}: una máquina puede necesitar reglas de cálculo o interpretación propias.
+    \item \textbf{Alertas}: las condiciones que constituyen una incidencia pueden variar entre máquinas.
+    \item \textbf{Operación}: algunas máquinas pueden trabajar con órdenes, pausas, contadores o procesos manuales, mientras que otras no.
+\end{itemize}
+
+\subsection{Estrategia de Tratamiento}
+
+La estrategia propuesta consiste en mantener un núcleo común de plataforma y desplazar la variabilidad hacia definiciones, configuraciones y servicios especializados.
+
+En consecuencia:
+
+\begin{itemize}
+    \item La plataforma compartirá un mismo modelo base para máquinas, lecturas, estados y alertas.
+    \item Cada máquina podrá disponer de sus propios parámetros definidos explícitamente.
+    \item Las reglas y métricas específicas se describirán mediante definiciones propias.
+    \item La lógica compleja o delicada podrá implementarse en servicios específicos por máquina o por familia de máquinas.
+\end{itemize}
+
+\subsection{Evitar Dos Riesgos Comunes}
+
+Este enfoque también pretende evitar dos riesgos frecuentes en soluciones de este tipo.
+
+El primer riesgo consiste en modelar todas las máquinas como si fueran iguales, introduciendo posteriormente excepciones y condiciones especiales repartidas por toda la aplicación. Este enfoque genera rigidez y un mantenimiento costoso.
+
+El segundo riesgo consiste en intentar resolver toda la variabilidad a través de un motor completamente genérico desde la primera iteración. Aunque atractivo en apariencia, este enfoque suele introducir una complejidad excesiva antes de disponer de suficiente conocimiento real del dominio.
+
+La solución recomendada se sitúa en un punto intermedio: una base común estable, combinada con mecanismos de extensión progresivos y controlados.
+
+\subsection{Criterio de Escalabilidad}
+
+El sistema se considerará correctamente escalable si la incorporación de una nueva máquina implica principalmente:
+
+\begin{itemize}
+    \item registrar la máquina en la plataforma,
+    \item definir sus parámetros y fuentes de entrada,
+    \item configurar o implementar sus reglas particulares,
+    \item y exponer sus datos y estado sin alterar el núcleo común.
+\end{itemize}
+
+Este criterio debe guiar las siguientes fases del diseño y de la implementación.

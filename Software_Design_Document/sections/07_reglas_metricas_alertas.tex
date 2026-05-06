@@ -1,0 +1,43 @@
+\section{Reglas, Métricas y Alertas}
+
+\subsection{Necesidad de un Enfoque Flexible}
+
+Las reglas de cálculo, las métricas derivadas y las condiciones de alerta forman parte central del valor funcional del sistema. No obstante, estos elementos no son uniformes entre máquinas, ya que cada equipo puede interpretar los datos de forma distinta y requerir indicadores operativos específicos.
+
+Por este motivo, la plataforma no debe asumir que existe un conjunto universal de reglas o métricas válido para todos los casos.
+
+\subsection{Reglas de Máquina}
+
+Las reglas de máquina representan comportamientos o decisiones aplicables a una máquina concreta. Entre ellas pueden encontrarse, por ejemplo, transformaciones de eventos, detección de transiciones relevantes, activación de contadores, cambios de estado o disparo de procesos específicos.
+
+Estas reglas podrán describirse mediante definiciones de dominio y ejecutarse posteriormente a través de servicios de aplicación o componentes especializados del sistema.
+
+\subsection{Métricas Derivadas}
+
+Las métricas derivadas representan cálculos obtenidos a partir de datos operativos, estados, pausas, contadores u otras señales registradas en la plataforma. En determinados casos podrán corresponder a indicadores clásicos de producción, como disponibilidad, rendimiento, calidad u OEE, mientras que en otros escenarios podrán responder a necesidades completamente diferentes.
+
+El sistema debe permitir que cada máquina disponga de su propio catálogo de métricas calculadas, con una definición clara de nombre, código, unidad y fórmula o criterio de cálculo asociado.
+
+\subsection{Alertas e Incidencias}
+
+Las alertas permiten representar condiciones de funcionamiento anómalas, incumplimientos operativos o situaciones que requieren atención. Estas condiciones pueden depender de umbrales, de ausencia de datos, de estados mantenidos durante un tiempo determinado o de combinaciones específicas de señales.
+
+Cada máquina podrá tener reglas de alerta diferenciadas, con niveles de severidad adecuados al impacto funcional de cada incidencia.
+
+\subsection{Separación entre Definición y Ejecución}
+
+Un principio importante del diseño es separar la definición de una regla o métrica de su ejecución real. La definición sirve para identificar, documentar, configurar y versionar el comportamiento esperado. La ejecución, en cambio, se realizará en componentes especializados de la solución, donde podrán implementarse los detalles operativos de forma controlada.
+
+Esta separación permite mantener claridad conceptual en el dominio y reduce el riesgo de cargar las entidades con lógica excesiva o demasiado dependiente de una máquina concreta.
+
+\subsection{Enfoque Recomendado}
+
+La recomendación para la primera fase del proyecto es utilizar un enfoque híbrido:
+
+\begin{itemize}
+    \item definiciones persistidas para reglas, métricas y alertas,
+    \item lógica de ejecución implementada en código allí donde la complejidad lo requiera,
+    \item y una evolución progresiva hacia mayor configurabilidad en función de la experiencia real obtenida con las primeras máquinas integradas.
+\end{itemize}
+
+Este enfoque ofrece un equilibrio razonable entre flexibilidad, mantenibilidad y velocidad de implementación.

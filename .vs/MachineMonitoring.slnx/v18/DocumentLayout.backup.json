@@ -1,0 +1,1346 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\machinemonitoring.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\machinemonitoring.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{207B6598-611F-4A7D-9F5B-6E8FC7860E9E}|MachineMonitoring.Api\\MachineMonitoring.Api.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{207B6598-611F-4A7D-9F5B-6E8FC7860E9E}|MachineMonitoring.Api\\MachineMonitoring.Api.csproj|solutionrelative:machinemonitoring.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{207B6598-611F-4A7D-9F5B-6E8FC7860E9E}|MachineMonitoring.Api\\MachineMonitoring.Api.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{207B6598-611F-4A7D-9F5B-6E8FC7860E9E}|MachineMonitoring.Api\\MachineMonitoring.Api.csproj|solutionrelative:machinemonitoring.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\repositories\\machinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\repositories\\productionmanualprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\repositories\\productionmanualprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\repositories\\productionmetricsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\repositories\\productionmetricsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\repositories\\productioncounterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\repositories\\productioncounterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\repositories\\productionpauserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\repositories\\productionpauserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\repositories\\productionorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\repositories\\productionorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\configurations\\machineconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\configurations\\machineconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\configurations\\productionmanualprocessconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\configurations\\productionmanualprocessconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\configurations\\productionmetricsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\configurations\\productionmetricsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\configurations\\productioncounterconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\configurations\\productioncounterconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\configurations\\productionpauseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\configurations\\productionpauseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\machinemonitoringdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\machinemonitoringdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\persistence\\configurations\\productionorderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\persistence\\configurations\\productionorderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.infrastructure\\services\\systemclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AFE85F7-BA74-4CE5-B9E8-19C356672ABD}|MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj|solutionrelative:machinemonitoring.infrastructure\\services\\systemclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getproductionmetricsbyorderidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getproductionmetricsbyorderidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getproductionmetricsbyorderidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getproductionmetricsbyorderidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getactiveproductioncounterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getactiveproductioncounterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getactiveproductioncounterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getactiveproductioncounterquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getproductioncounterbyorderidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getproductioncounterbyorderidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getproductioncounterbyorderidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getproductioncounterbyorderidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getactiveproductionpausehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getactiveproductionpausehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getactiveproductionpausequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getactiveproductionpausequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getactiveproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getactiveproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getactiveproductionorderquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getactiveproductionorderquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getproductionorderbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getproductionorderbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\getproductionorderbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\getproductionorderbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\calculateproductionmetricshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\calculateproductionmetricshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\calculateproductionmetricscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\calculateproductionmetricscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\createproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\createproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\createproductionordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\createproductionordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\finishproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\finishproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\finishproductionordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\finishproductionordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\incrementproductioncountercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\incrementproductioncountercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\incrementproductioncounterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\incrementproductioncounterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\startproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\startproductionorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\usecases\\production\\startproductionordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\usecases\\production\\startproductionordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\dtos\\production\\productionmetricsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\dtos\\production\\productionmetricsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\dtos\\production\\productioncounterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\dtos\\production\\productioncounterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\dtos\\production\\productionpausedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\dtos\\production\\productionpausedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\dtos\\production\\productionorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\dtos\\production\\productionorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\services\\iclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\services\\iclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\repositories\\imachinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\repositories\\imachinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\repositories\\iproductionmanualprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\repositories\\iproductionmanualprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\repositories\\iproductionmetricsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\repositories\\iproductionmetricsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\repositories\\iproductioncounterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\repositories\\iproductioncounterrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\repositories\\iproductionpauserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\repositories\\iproductionpauserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application\\abstractions\\repositories\\iproductionorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C48A9F17-34E2-4311-ABC0-A805CE81C17B}|MachineMonitoring.Application\\MachineMonitoring.Application.csproj|solutionrelative:machinemonitoring.application\\abstractions\\repositories\\iproductionorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\productionorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\productionorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\productioncounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\productioncounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\enums\\pausetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\enums\\pausetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\productionpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\productionpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\productionmanualprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\productionmanualprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\alertruledefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\alertruledefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\calculatedmetricdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\calculatedmetricdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machinealert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machinealert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machineinputmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machineinputmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machineinputsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machineinputsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machineparameterdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machineparameterdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machinereadingnormalized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machinereadingnormalized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machinereadingraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machinereadingraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machineruledefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machineruledefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\machinestatesnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\machinestatesnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\orderaudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\orderaudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\entities\\productionmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\entities\\productionmetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\valueobjects\\parametervalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\valueobjects\\parametervalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\valueobjects\\externalfieldpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\valueobjects\\externalfieldpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\valueobjects\\measurementunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\valueobjects\\measurementunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\valueobjects\\parametercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\valueobjects\\parametercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\enums\\productionorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\enums\\productionorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\enums\\inputsourcetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\enums\\inputsourcetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\enums\\alertseverity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\enums\\alertseverity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.domain\\enums\\machinestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43F8A9A1-33B4-4EBB-B4B3-88AE35F5A979}|MachineMonitoring.Domain\\MachineMonitoring.Domain.csproj|solutionrelative:machinemonitoring.domain\\enums\\machinestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA251E7B-1A38-4F5D-B992-12E18E52E64A}|MachineMonitoring.Application.Tests\\MachineMonitoring.Application.Tests.csproj|f:\\dev\\monitorizacion\\machinemonitoring\\machinemonitoring.application.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA251E7B-1A38-4F5D-B992-12E18E52E64A}|MachineMonitoring.Application.Tests\\MachineMonitoring.Application.Tests.csproj|solutionrelative:machinemonitoring.application.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 62,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "MachineMonitoring.Api\\appsettings.json",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Api\\appsettings.json",
+              "RelativeToolTip": "MachineMonitoring.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-05T08:33:33.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Api\\Program.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Api\\Program.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Api\\Program.cs",
+              "RelativeToolTip": "MachineMonitoring.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:31:35.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:26:11.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MachineRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\MachineRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Repositories\\MachineRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\MachineRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Repositories\\MachineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:24:36.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductionManualProcessRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionManualProcessRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Repositories\\ProductionManualProcessRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionManualProcessRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Repositories\\ProductionManualProcessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:24:26.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MachineMonitoring.Infrastructure",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\MachineMonitoring.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-04T11:05:15.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductionMetricsRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionMetricsRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Repositories\\ProductionMetricsRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionMetricsRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Repositories\\ProductionMetricsRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:24:17.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductionCounterRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionCounterRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Repositories\\ProductionCounterRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionCounterRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Repositories\\ProductionCounterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:24:10.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductionPauseRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionPauseRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Repositories\\ProductionPauseRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionPauseRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Repositories\\ProductionPauseRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA0wCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:24:01.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductionOrderRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionOrderRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Repositories\\ProductionOrderRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Repositories\\ProductionOrderRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Repositories\\ProductionOrderRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAcwCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:23:52.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MachineConfiguration.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\MachineConfiguration.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\MachineConfiguration.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\MachineConfiguration.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\MachineConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:23:32.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductionManualProcessConfiguration.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionManualProcessConfiguration.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionManualProcessConfiguration.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionManualProcessConfiguration.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionManualProcessConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:23:24.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductionMetricsConfiguration.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionMetricsConfiguration.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionMetricsConfiguration.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionMetricsConfiguration.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionMetricsConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:23:15.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductionCounterConfiguration.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionCounterConfiguration.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionCounterConfiguration.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionCounterConfiguration.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionCounterConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:23:06.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductionPauseConfiguration.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionPauseConfiguration.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionPauseConfiguration.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionPauseConfiguration.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionPauseConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:22:02.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductionOrderConfiguration.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionOrderConfiguration.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionOrderConfiguration.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionOrderConfiguration.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\Configurations\\ProductionOrderConfiguration.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:21:49.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MachineMonitoringDbContext.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\MachineMonitoringDbContext.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Persistence\\MachineMonitoringDbContext.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Persistence\\MachineMonitoringDbContext.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Persistence\\MachineMonitoringDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:21:10.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SystemClock.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Services\\SystemClock.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Infrastructure\\Services\\SystemClock.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Infrastructure\\Services\\SystemClock.cs",
+              "RelativeToolTip": "MachineMonitoring.Infrastructure\\Services\\SystemClock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T08:20:59.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetProductionMetricsByOrderIdHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:13:40.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetProductionMetricsByOrderIdQuery.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdQuery.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdQuery.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdQuery.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionMetricsByOrderIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:13:33.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetActiveProductionCounterHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:13:23.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetActiveProductionCounterQuery.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterQuery.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterQuery.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterQuery.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionCounterQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:13:14.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetProductionCounterByOrderIdHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:58.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetProductionCounterByOrderIdQuery.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdQuery.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdQuery.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdQuery.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionCounterByOrderIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:51.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetActiveProductionPauseHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:41.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetActiveProductionPauseQuery.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseQuery.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseQuery.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseQuery.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionPauseQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:33.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetActiveProductionOrderHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderHandler.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:22.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GetActiveProductionOrderQuery.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderQuery.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderQuery.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderQuery.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetActiveProductionOrderQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:15.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GetProductionOrderByIdHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdHandler.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA0wDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:12:04.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GetProductionOrderByIdQuery.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdQuery.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdQuery.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdQuery.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\GetProductionOrderByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:11:55.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CalculateProductionMetricsHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsHandler.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAcwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:09:53.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CalculateProductionMetricsCommand.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsCommand.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsCommand.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsCommand.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\CalculateProductionMetricsCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:09:44.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FinishProductionOrderHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderHandler.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAcwHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:09:28.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FinishProductionOrderCommand.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderCommand.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderCommand.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderCommand.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\FinishProductionOrderCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:08:45.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CreateProductionOrderCommand.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderCommand.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderCommand.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderCommand.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:04:12.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateProductionOrderHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\CreateProductionOrderHandler.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwFQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:04:22.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IncrementProductionCounterCommand.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterCommand.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterCommand.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterCommand.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:04:54.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IncrementProductionCounterHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\IncrementProductionCounterHandler.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:05:03.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StartProductionOrderHandler.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderHandler.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderHandler.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderHandler.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderHandler.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAcwFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:04:43.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "StartProductionOrderCommand.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderCommand.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderCommand.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderCommand.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\UseCases\\Production\\StartProductionOrderCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:04:34.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ProductionMetricsDto.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionMetricsDto.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\DTOs\\Production\\ProductionMetricsDto.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionMetricsDto.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\DTOs\\Production\\ProductionMetricsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:03:33.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProductionCounterDto.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionCounterDto.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\DTOs\\Production\\ProductionCounterDto.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionCounterDto.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\DTOs\\Production\\ProductionCounterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:03:21.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ProductionPauseDto.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionPauseDto.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\DTOs\\Production\\ProductionPauseDto.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionPauseDto.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\DTOs\\Production\\ProductionPauseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:03:09.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProductionOrderDto.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionOrderDto.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\DTOs\\Production\\ProductionOrderDto.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\DTOs\\Production\\ProductionOrderDto.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\DTOs\\Production\\ProductionOrderDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:02:44.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IClock.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Services\\IClock.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Services\\IClock.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Services\\IClock.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Services\\IClock.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:01:48.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IMachineRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IMachineRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Repositories\\IMachineRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IMachineRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Repositories\\IMachineRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:01:35.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IProductionManualProcessRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionManualProcessRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionManualProcessRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionManualProcessRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionManualProcessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T15:01:27.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IProductionMetricsRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionMetricsRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionMetricsRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionMetricsRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionMetricsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:58:21.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "IProductionCounterRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionCounterRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionCounterRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionCounterRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionCounterRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:57:56.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IProductionPauseRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionPauseRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionPauseRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionPauseRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionPauseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:57:48.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IProductionOrderRepository.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionOrderRepository.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionOrderRepository.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionOrderRepository.cs",
+              "RelativeToolTip": "MachineMonitoring.Application\\Abstractions\\Repositories\\IProductionOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:57:39.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ProductionManualProcess.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionManualProcess.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\ProductionManualProcess.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionManualProcess.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\ProductionManualProcess.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T14:35:17.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Machine.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\Machine.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\Machine.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\Machine.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\Machine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:02:48.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "CalculatedMetricDefinition.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\CalculatedMetricDefinition.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\CalculatedMetricDefinition.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\CalculatedMetricDefinition.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\CalculatedMetricDefinition.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAcwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:08:10.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "AlertRuleDefinition.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\AlertRuleDefinition.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\AlertRuleDefinition.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\AlertRuleDefinition.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\AlertRuleDefinition.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:08:29.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ProductionPause.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionPause.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\ProductionPause.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionPause.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\ProductionPause.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAcwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:13.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PauseType.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\PauseType.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Enums\\PauseType.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\PauseType.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Enums\\PauseType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:54.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ProductionCounter.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionCounter.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\ProductionCounter.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionCounter.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\ProductionCounter.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:27.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ProductionOrder.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionOrder.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\ProductionOrder.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionOrder.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\ProductionOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:09.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "MachineAlert.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineAlert.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineAlert.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineAlert.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineAlert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:05.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "MachineInputMapping.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineInputMapping.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineInputMapping.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineInputMapping.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineInputMapping.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwDQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:54:46.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "MachineInputSource.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineInputSource.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineInputSource.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineInputSource.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineInputSource.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAcwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:54:37.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "MachineParameterDefinition.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineParameterDefinition.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineParameterDefinition.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineParameterDefinition.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineParameterDefinition.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:02:51.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "MachineReadingNormalized.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineReadingNormalized.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineReadingNormalized.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineReadingNormalized.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineReadingNormalized.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA0wCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:54:55.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "MachineReadingRaw.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineReadingRaw.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineReadingRaw.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineReadingRaw.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineReadingRaw.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA0wCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:54:51.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "MachineRuleDefinition.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineRuleDefinition.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineRuleDefinition.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineRuleDefinition.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineRuleDefinition.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAcwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:07:46.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "MachineStateSnapshot.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineStateSnapshot.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\MachineStateSnapshot.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\MachineStateSnapshot.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\MachineStateSnapshot.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA0wCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:01.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "OrderAudit.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\OrderAudit.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\OrderAudit.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\OrderAudit.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\OrderAudit.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:31.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ProductionMetrics.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionMetrics.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Entities\\ProductionMetrics.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Entities\\ProductionMetrics.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Entities\\ProductionMetrics.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwF8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:23.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "ParameterValue.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\ParameterValue.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\ValueObjects\\ParameterValue.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\ParameterValue.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\ValueObjects\\ParameterValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:03:24.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ExternalFieldPath.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\ExternalFieldPath.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\ValueObjects\\ExternalFieldPath.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\ExternalFieldPath.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\ValueObjects\\ExternalFieldPath.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:56:09.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "MeasurementUnit.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\MeasurementUnit.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\ValueObjects\\MeasurementUnit.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\MeasurementUnit.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\ValueObjects\\MeasurementUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:03:29.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ParameterCode.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\ParameterCode.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\ValueObjects\\ParameterCode.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\ValueObjects\\ParameterCode.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\ValueObjects\\ParameterCode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:03:14.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "ProductionOrderStatus.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\ProductionOrderStatus.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Enums\\ProductionOrderStatus.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\ProductionOrderStatus.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Enums\\ProductionOrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:50.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "InputSourceType.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\InputSourceType.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Enums\\InputSourceType.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\InputSourceType.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Enums\\InputSourceType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:58.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "AlertSeverity.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\AlertSeverity.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Enums\\AlertSeverity.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\AlertSeverity.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Enums\\AlertSeverity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:46.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "MachineStatus.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\MachineStatus.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Domain\\Enums\\MachineStatus.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Domain\\Enums\\MachineStatus.cs",
+              "RelativeToolTip": "MachineMonitoring.Domain\\Enums\\MachineStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T11:55:42.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "MachineMonitoring.Application.Tests\\UnitTest1.cs",
+              "ToolTip": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "MachineMonitoring.Application.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T10:47:01.408Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

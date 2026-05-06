@@ -1,0 +1,12 @@
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\bin\Debug\net10.0\MachineMonitoring.Domain.deps.json
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\bin\Debug\net10.0\MachineMonitoring.Domain.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\bin\Debug\net10.0\MachineMonitoring.Domain.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.AssemblyInfoInputs.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.AssemblyInfo.cs
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.csproj.CoreCompileInputs.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\refint\MachineMonitoring.Domain.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\ref\MachineMonitoring.Domain.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\obj\Debug\net10.0\MachineMonitoring.Domain.csproj.AssemblyReference.cache

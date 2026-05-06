@@ -1,0 +1,55 @@
+\section{Objetivo y Alcance}
+
+\subsection{Objetivo General}
+
+El objetivo del proyecto es diseñar e implementar una plataforma interna de monitorización de máquinas que permita recibir, procesar, almacenar y visualizar información operativa procedente de diferentes equipos industriales, cada uno con parámetros, reglas de cálculo y comportamientos propios.
+
+La solución debe servir como base común para integrar progresivamente nuevas máquinas, manteniendo una estructura homogénea en la aplicación y reduciendo el esfuerzo necesario para incorporar cambios futuros en parámetros, métricas, alertas y lógica operativa.
+
+\subsection{Objetivos Específicos}
+
+De forma específica, la plataforma deberá permitir:
+
+\begin{itemize}
+    \item Registrar máquinas y sus configuraciones operativas.
+    \item Integrar múltiples fuentes de entrada de datos, incluyendo MQTT y endpoints HTTP.
+    \item Definir parámetros distintos para cada máquina.
+    \item Almacenar tanto la información cruda recibida como los datos ya normalizados.
+    \item Consolidar el estado actual de cada máquina.
+    \item Gestionar alertas e incidencias operativas.
+    \item Soportar lógica de producción cuando la máquina lo requiera, incluyendo órdenes, pausas, contadores y métricas.
+    \item Permitir la incorporación de reglas, cálculos y comportamientos específicos por máquina sin rediseñar el núcleo del sistema.
+\end{itemize}
+
+\subsection{Alcance Inicial del MVP}
+
+En una primera fase, el alcance recomendado del MVP se centrará en construir el núcleo común de la plataforma y validarlo con una máquina piloto real.
+
+Este alcance inicial incluirá, como mínimo:
+
+\begin{itemize}
+    \item Estructura base de la solución .NET.
+    \item Modelo de dominio común para monitorización y operación.
+    \item Recepción de datos desde al menos una fuente real.
+    \item Normalización y persistencia de datos.
+    \item Gestión del estado actual de la máquina.
+    \item Gestión básica de alertas.
+    \item Integración de una primera máquina piloto con sus reglas y cálculos concretos.
+    \item Primera base documental de arquitectura y decisiones técnicas.
+\end{itemize}
+
+\subsection{Fuera de Alcance Inicial}
+
+En esta fase inicial no se considera prioritario abordar todos los escenarios posibles ni resolver de forma definitiva toda la casuística futura. En particular, quedan fuera del alcance inicial los siguientes aspectos:
+
+\begin{itemize}
+    \item Integración simultánea de todas las máquinas existentes.
+    \item Construcción de un motor de reglas completamente genérico y universal.
+    \item Automatización avanzada de despliegue y operación en todos los entornos.
+    \item Optimización definitiva de rendimiento para grandes volúmenes históricos.
+    \item Soporte completo para cualquier formato de entrada no identificado en la fase de análisis inicial.
+\end{itemize}
+
+\subsection{Criterio de Evolución}
+
+La solución se diseñará para crecer por iteraciones. El criterio recomendado es consolidar primero un núcleo común estable, validar dicho núcleo con una máquina real y, a partir de esa base, incorporar nuevas máquinas, nuevas reglas y nuevas necesidades operativas de forma progresiva.

@@ -1,0 +1,13 @@
+\section{Siguientes Pasos}
+
+A partir del estado actual del análisis y del diseño inicial, se recomienda avanzar de forma iterativa y controlada, priorizando la validación temprana del núcleo común de la plataforma.
+
+Como siguiente paso inmediato, se propone consolidar el modelo de dominio ya definido en la solución .NET y completar la documentación técnica base del proyecto. Esto permitirá fijar con claridad el vocabulario del dominio, las responsabilidades principales del sistema y la estrategia general de evolución.
+
+A continuación, se recomienda utilizar la máquina heredada en Java como primer caso piloto de implementación. Este trabajo deberá centrarse en mapear sus eventos de entrada, sus parámetros relevantes, sus reglas operativas, su flujo de producción y sus métricas al nuevo modelo común propuesto.
+
+Una vez validado este primer piloto, el siguiente objetivo será desarrollar la persistencia inicial sobre PostgreSQL, preparar los primeros casos de uso de aplicación y construir el flujo completo de ingestión, normalización, cálculo y consulta para una máquina real.
+
+Posteriormente, el sistema podrá evolucionar mediante la incorporación progresiva de nuevas máquinas, utilizando el aprendizaje obtenido en el piloto para ajustar reglas, estructuras de configuración, necesidades de operación y mecanismos de extensión del núcleo.
+
+El criterio general de avance debe ser consolidar primero una base estable y comprensible, y solo después ampliar cobertura funcional o número de máquinas integradas.

@@ -1,0 +1,11 @@
+\section{Introducción}
+
+El presente documento describe la propuesta inicial de arquitectura para una plataforma interna de monitorización de máquinas, orientada a entornos industriales o de intranet, con implementación sobre tecnologías .NET y PostgreSQL.
+
+La necesidad principal del proyecto surge de la existencia de múltiples máquinas con comportamientos heterogéneos, distintos parámetros operativos, diferentes fuentes de datos y reglas de cálculo específicas. Algunas máquinas reciben información mediante MQTT, otras mediante endpoints HTTP, y cada una puede requerir métricas, alertas y procesos de negocio diferentes.
+
+A diferencia de un sistema cerrado para una única máquina o una única línea, esta solución debe permitir la incorporación progresiva de nuevas máquinas sin rediseñar el núcleo de la aplicación. Del mismo modo, debe soportar cambios futuros en parámetros, reglas de cálculo, umbrales de alerta y modelos operativos con un impacto controlado en el sistema.
+
+Por este motivo, la propuesta se basa en un núcleo común de monitorización y operación, complementado por definiciones configurables y lógica específica por máquina cuando resulte necesario. Este enfoque pretende equilibrar mantenibilidad, escalabilidad y claridad técnica, evitando tanto un diseño rígido como una abstracción excesiva desde fases tempranas del proyecto.
+
+El documento recoge el enfoque arquitectónico recomendado, la estructura de la solución, el modelo de dominio común, la estrategia para tratar la variabilidad entre máquinas y un primer caso piloto derivado de una implementación previa existente en Java.

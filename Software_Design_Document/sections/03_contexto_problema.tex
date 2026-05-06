@@ -1,0 +1,13 @@
+\section{Contexto del Problema}
+
+El escenario de partida no corresponde a una instalación homogénea ni a un conjunto de máquinas equivalentes entre sí. Cada máquina puede presentar diferencias relevantes en su estructura de datos, en su modo de operación, en la forma de comunicar eventos y en las reglas utilizadas para interpretar su comportamiento.
+
+Desde el punto de vista técnico, esta heterogeneidad se manifiesta en varios niveles. En primer lugar, las fuentes de entrada no son únicas, ya que algunas máquinas envían información mediante MQTT y otras lo hacen a través de endpoints HTTP u otros mecanismos de integración. En segundo lugar, los parámetros recibidos no son uniformes, puesto que cada máquina puede exponer campos distintos, con tipos de dato, unidades y significados operativos diferentes.
+
+Además de la diversidad en la entrada de datos, existe también una variabilidad significativa en la lógica de negocio asociada a cada máquina. Algunas requieren cálculos de métricas derivadas, otras necesitan reglas específicas para la detección de incidencias, y otras incorporan además conceptos operativos como órdenes de producción, pausas, contadores de unidades o procesos manuales posteriores al proceso automático.
+
+Este contexto descarta un enfoque rígido basado en una única estructura cerrada de máquina o en un modelo fuertemente acoplado a una implementación concreta. Un diseño de ese tipo podría funcionar para una máquina individual, pero generaría un coste elevado de mantenimiento y evolución a medida que se incorporasen nuevos equipos o cambiasen sus parámetros y reglas.
+
+Por tanto, el problema a resolver no consiste únicamente en mostrar datos de máquinas, sino en construir una plataforma interna capaz de absorber diversidad funcional y técnica sin perder coherencia arquitectónica. La solución debe disponer de un núcleo común suficientemente estable, pero también de mecanismos de extensión que permitan introducir comportamientos específicos cuando cada máquina lo requiera.
+
+La existencia de una implementación previa en Java para una máquina concreta resulta especialmente útil en este contexto, ya que permite identificar patrones reales de operación, reglas de cálculo, eventos de entrada y necesidades de monitorización. Sin embargo, dicha implementación debe entenderse como un caso piloto de referencia y no como un modelo universal trasladable sin adaptación al nuevo sistema.

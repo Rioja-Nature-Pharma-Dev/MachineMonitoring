@@ -1,0 +1,45 @@
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+    % Banda lateral más estrecha
+    \fill[black] (current page.north west) rectangle ([xshift=3.2cm]current page.south west);
+
+    % Marca vertical
+    \node[
+        anchor=south west,
+        text=white
+    ] at ([xshift=0.85cm,yshift=1.2cm]current page.south west) {%
+        \begin{turn}{90}
+            {\fontsize{24}{24}\selectfont\lemonBold RIOJA NATURE PHARMA}
+        \end{turn}
+    };
+
+    % Línea superior sutil
+    \draw[line width=1pt, black!35]
+        ([xshift=4.2cm,yshift=-2.8cm]current page.north west) --
+        ([xshift=-2.0cm,yshift=-2.8cm]current page.north east);
+\end{tikzpicture}
+
+\vspace*{3.6cm}
+
+\hspace*{4.4cm}
+\begin{minipage}[t]{10.8cm}
+    {\fontsize{24}{28}\selectfont\lemonBold Plataforma  Monitorización  Máquinas\par}
+
+    \vspace{1.0cm}
+
+    {\fontsize{12}{16}\selectfont\lemonReg
+    Diseño inicial de solución .NET para entorno industrial interno\par}
+
+    \vspace{2.2cm}
+
+    {\fontsize{11}{14}\selectfont\lemonBold Departamento IT\par}
+    \vspace{0.2cm}
+    {\fontsize{11}{14}\selectfont\lemonReg Rioja Nature Pharma\par}
+
+    \vfill
+
+    {\fontsize{10.5}{13}\selectfont\lemonBold Versión 0.1\par}
+    \vspace{0.2cm}
+\end{minipage}
+
+\end{titlepage}

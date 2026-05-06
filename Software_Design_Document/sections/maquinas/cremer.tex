@@ -1,0 +1,303 @@
+\subsection{Máquina Cremer}
+
+\subsubsection{Descripción General}
+
+La máquina Cremer constituye el primer caso real definido dentro de la plataforma de monitorización. Se trata de una máquina de producción integrada mediante MQTT, con comportamiento operativo propio, gestión de órdenes, pausas manuales y automáticas, conteo de unidades y cálculo de métricas de producción.
+
+A diferencia de una máquina limitada a telemetría simple, Cremer participa de forma activa en el flujo operativo del proceso productivo. Por este motivo, su integración en la nueva plataforma debe contemplar no solo la recepción de señales, sino también la gestión de eventos de negocio derivados de dichas señales.
+
+\subsubsection{Objetivo dentro del sistema}
+
+La integración de Cremer dentro de la nueva solución tiene los siguientes objetivos principales:
+
+\begin{itemize}
+    \item recibir y registrar eventos procedentes de MQTT,
+    \item interpretar señales GPIO con impacto operativo,
+    \item mantener el estado actual de la máquina,
+    \item gestionar órdenes de producción asociadas a la máquina,
+    \item registrar pausas manuales y pausas automáticas,
+    \item mantener un contador de producción asociado a la orden activa,
+    \item calcular métricas de producción en momentos operativos concretos,
+    \item servir como primer caso real de implementación sobre la arquitectura común.
+\end{itemize}
+
+\subsubsection{Integración de Datos}
+
+En el estado actual del análisis, la máquina Cremer utiliza MQTT como mecanismo principal de integración. Los mensajes recibidos se clasifican funcionalmente en dos grandes grupos:
+
+\begin{itemize}
+    \item mensajes de estado del dispositivo origen,
+    \item mensajes de eventos GPIO.
+\end{itemize}
+
+Los mensajes de estado permiten conocer la disponibilidad del dispositivo emisor. Los mensajes de eventos GPIO contienen información operativa que puede disparar cambios de estado, incrementos de contador o generación de pausas automáticas.
+
+\subsubsection{Formato de Entrada Identificado}
+
+A partir de la implementación previa analizada, se han identificado los siguientes campos principales dentro de los mensajes recibidos:
+
+\begin{itemize}
+    \item \texttt{pin}: identificador del GPIO que origina el evento.
+    \item \texttt{value}: valor lógico asociado al pin.
+    \item \texttt{status}: estado del dispositivo emisor en mensajes de disponibilidad.
+\end{itemize}
+
+Este modelo de entrada deberá mapearse en la nueva solución a lecturas crudas y lecturas normalizadas, evitando que el tratamiento técnico del payload quede mezclado con la lógica de negocio.
+
+\subsubsection{Fuentes de Entrada Definidas}
+
+En la nueva plataforma, Cremer deberá definirse al menos con las siguientes fuentes de entrada conceptuales:
+
+\begin{itemize}
+    \item una fuente de entrada MQTT para eventos operativos,
+    \item una fuente de entrada MQTT para mensajes de estado del dispositivo.
+\end{itemize}
+
+En iteraciones posteriores podrá concretarse si ambas fuentes comparten topic base o si se modelan como canales diferenciados dentro de la definición de la máquina.
+
+\subsubsection{Señales GPIO Relevantes}
+
+Hasta el momento se han identificado las siguientes señales relevantes para Cremer:
+
+\begin{itemize}
+    \item GPIO 23: utilizado para el conteo de unidades producidas.
+    \item GPIO 22: utilizado para detectar avería ponderal.
+    \item GPIO 19: utilizado para detectar avería de etiqueta.
+\end{itemize}
+
+Estas señales no deben entenderse únicamente como datos técnicos, sino como eventos con semántica operativa dentro del sistema.
+
+\subsubsection{Reglas de Interpretación de Señales}
+
+A partir del comportamiento analizado, se identifican las siguientes reglas:
+
+\begin{itemize}
+    \item La señal GPIO 23 incrementa el contador de producción cuando se detecta una transición de flanco de bajada, es decir, un cambio de valor de \texttt{1} a \texttt{0}.
+    \item La señal GPIO 22 puede generar una pausa automática de avería ponderal cuando permanece en estado de fallo durante un tiempo sostenido.
+    \item La señal GPIO 19 puede generar una pausa automática de avería de etiqueta cuando permanece en estado de fallo durante un tiempo sostenido.
+    \item Las señales de recuperación permiten finalizar automáticamente las pausas previamente abiertas cuando se mantiene la recuperación el tiempo configurado.
+\end{itemize}
+
+\subsubsection{Conectividad del Dispositivo Origen}
+
+El sistema actual identifica también el estado de conectividad del dispositivo emisor mediante mensajes de estado. Este comportamiento resulta relevante para el nuevo sistema, ya que permitirá representar si el origen de datos de Cremer se encuentra disponible, desconectado o en situación anómala.
+
+Se recomienda reflejar esta información dentro del estado consolidado de la máquina y exponerla en la interfaz de monitorización.
+
+\subsubsection{Flujo Operativo General}
+
+La máquina Cremer trabaja sobre órdenes de producción y presenta un flujo operativo con varios estados relevantes. En el análisis realizado se han identificado, como mínimo, los siguientes estados de orden:
+
+\begin{itemize}
+    \item creada,
+    \item en proceso,
+    \item pausada,
+    \item espera de proceso manual,
+    \item proceso manual en curso,
+    \item finalizada.
+\end{itemize}
+
+Este flujo confirma que Cremer no debe modelarse únicamente como una máquina emisora de señales, sino como una unidad operativa con ciclo de trabajo propio.
+
+\subsubsection{Inicio de Producción}
+
+Una orden de producción asociada a Cremer puede pasar a estado de producción activa cuando se inicia formalmente el proceso. En ese momento:
+
+\begin{itemize}
+    \item la orden pasa a estado \texttt{InProgress},
+    \item se registra su hora de inicio,
+    \item se activa el contador de producción,
+    \item la máquina entra en estado operativo activo.
+\end{itemize}
+
+Esta transición deberá quedar soportada en la nueva plataforma como un caso de uso específico de operación.
+
+\subsubsection{Pausas Operativas}
+
+Durante la producción, Cremer puede registrar pausas. Estas pausas pueden ser generadas manualmente o de forma automática.
+
+En el análisis de la implementación previa se han identificado los siguientes tipos funcionales de pausa:
+
+\begin{itemize}
+    \item incidencias de máquina,
+    \item avería ponderal,
+    \item avería de etiqueta,
+    \item falta de material,
+    \item material defectuoso,
+    \item mantenimiento,
+    \item limpieza,
+    \item parada de calidad,
+    \item cambio de turno,
+    \item fabricación parcial,
+    \item otras paradas operativas.
+\end{itemize}
+
+\subsubsection{Tratamiento Funcional de las Pausas}
+
+No todas las pausas tienen el mismo efecto sobre el proceso productivo. Algunas pausas computan en las métricas de producción y otras se consideran no computables.
+
+Esta diferencia afecta al cálculo de tiempos y, en determinados casos, también al tiempo estimado de la orden. Por ello, el modelo de Cremer dentro de la nueva plataforma deberá conservar explícitamente la distinción entre pausas computables y no computables.
+
+\subsubsection{Pausas Automáticas}
+
+Cremer presenta además lógica de pausas automáticas basada en señales GPIO. A partir del análisis realizado se han identificado las siguientes reglas temporales:
+
+\begin{itemize}
+    \item un fallo sostenido en GPIO 22 durante aproximadamente 20 segundos genera una pausa automática de avería ponderal,
+    \item una recuperación sostenida en GPIO 22 durante aproximadamente 5 segundos finaliza dicha pausa,
+    \item un fallo sostenido en GPIO 19 durante aproximadamente 20 segundos genera una pausa automática de avería de etiqueta,
+    \item una recuperación sostenida en GPIO 19 durante aproximadamente 5 segundos finaliza dicha pausa.
+\end{itemize}
+
+Adicionalmente, se ha observado la existencia de un mecanismo de cooldown que evita recreaciones inmediatas de pausas automáticas tras determinados cambios de estado.
+
+\subsubsection{Contador de Producción}
+
+Cremer dispone de un contador de producción asociado a la orden activa. Este contador se incrementa a partir de eventos de señal concretos y se relaciona directamente con la operación en curso.
+
+Las reglas observadas indican que:
+
+\begin{itemize}
+    \item el contador se activa al iniciar la producción,
+    \item el contador se desactiva durante las pausas,
+    \item el contador se desactiva al salir del proceso automático,
+    \item el contador mantiene la cantidad acumulada asociada a la orden correspondiente.
+\end{itemize}
+
+En la nueva plataforma, este comportamiento se representará mediante la entidad \texttt{ProductionCounter} y su lógica asociada.
+
+\subsubsection{Finalización de Producción}
+
+Cuando una orden finaliza su fase automática, el sistema actual permite dos caminos:
+
+\begin{itemize}
+    \item finalización directa,
+    \item paso a espera de proceso manual.
+\end{itemize}
+
+Si la orden requiere trabajo manual posterior, pasa a un estado intermedio de espera y posteriormente a proceso manual. Este comportamiento confirma que la gestión de Cremer incluye una dimensión operativa más amplia que la simple captura de señales.
+
+\subsubsection{Proceso Manual Posterior}
+
+En ciertos casos, la orden asociada a Cremer no termina directamente tras el proceso automático, sino que entra en una fase manual posterior. En esta fase:
+
+\begin{itemize}
+    \item se registra el inicio del proceso manual,
+    \item se mantiene información temporal del trabajo manual,
+    \item se registran cantidades asociadas al proceso manual,
+    \item la orden termina definitivamente al finalizar esta etapa.
+\end{itemize}
+
+Se ha identificado además que las métricas principales no se recalculan durante este proceso manual, ya que se consideran cerradas al abandonar la fase automática principal.
+
+\subsubsection{Métricas de Producción Identificadas}
+
+A partir de la lógica existente, se han identificado para Cremer las siguientes métricas de producción:
+
+\begin{itemize}
+    \item tiempo total,
+    \item tiempo pausado,
+    \item tiempo activo,
+    \item disponibilidad,
+    \item rendimiento,
+    \item calidad,
+    \item OEE,
+    \item estándar real,
+    \item porcentaje de cumplimiento del pedido.
+\end{itemize}
+
+Estas métricas deberán definirse dentro de la nueva plataforma como métricas calculadas asociadas a la máquina Cremer.
+
+\subsubsection{Momento de Cálculo de Métricas}
+
+Las métricas de Cremer no se interpretan como un cálculo continuo ni como una simple agregación técnica. El comportamiento observado muestra que se calculan cuando la orden abandona la producción automática, independientemente de si la orden termina por completo o pasa a espera de proceso manual.
+
+Este detalle es importante para la nueva solución, ya que implica que el momento de cálculo forma parte de la lógica funcional de la máquina.
+
+\subsubsection{Alertas e Incidencias}
+
+En el caso de Cremer, las incidencias y alertas pueden derivarse tanto de pausas manuales como de pausas automáticas. A nivel funcional, deberán contemplarse como mínimo los siguientes escenarios:
+
+\begin{itemize}
+    \item avería ponderal,
+    \item avería de etiqueta,
+    \item incidencias de máquina registradas manualmente,
+    \item problemas de material,
+    \item paradas de calidad,
+    \item mantenimiento y limpieza,
+    \item desconexión o indisponibilidad del origen de datos.
+\end{itemize}
+
+La severidad, el comportamiento de activación y el cierre de estas alertas deberán concretarse con mayor detalle durante la implementación.
+
+\subsubsection{Estado Consolidado de Cremer}
+
+En la nueva plataforma, el estado actual de Cremer debería poder resumirse al menos mediante los siguientes elementos:
+
+\begin{itemize}
+    \item estado general de la máquina,
+    \item estado de conectividad del origen de datos,
+    \item orden activa o última orden relevante,
+    \item estado de producción actual,
+    \item pausa activa, si existe,
+    \item contador de producción actual,
+    \item métricas principales asociadas a la orden activa o más reciente,
+    \item alertas activas.
+\end{itemize}
+
+Este conjunto de información deberá alimentar el \texttt{MachineStateSnapshot} y servir de base para la futura interfaz de monitorización.
+
+\subsubsection{Encaje en el Modelo Común}
+
+Cremer se integrará dentro del nuevo sistema utilizando el núcleo común ya definido en la solución .NET. En particular, su representación deberá apoyarse en:
+
+\begin{itemize}
+    \item \texttt{Machine},
+    \item \texttt{MachineInputSource},
+    \item \texttt{MachineInputMapping},
+    \item \texttt{MachineParameterDefinition},
+    \item \texttt{MachineReadingRaw},
+    \item \texttt{MachineReadingNormalized},
+    \item \texttt{MachineStateSnapshot},
+    \item \texttt{MachineAlert},
+    \item \texttt{ProductionOrder},
+    \item \texttt{ProductionPause},
+    \item \texttt{ProductionCounter},
+    \item \texttt{ProductionMetrics},
+    \item \texttt{MachineRuleDefinition},
+    \item \texttt{CalculatedMetricDefinition},
+    \item \texttt{AlertRuleDefinition}.
+\end{itemize}
+
+\subsubsection{Lógica Específica de Cremer}
+
+Aunque el núcleo común del sistema absorberá la estructura general, el comportamiento propio de Cremer deberá implementarse de forma especializada. Entre los elementos que deberán tratarse como lógica específica de máquina se encuentran:
+
+\begin{itemize}
+    \item interpretación de eventos GPIO concretos,
+    \item detección de flanco para incremento de contador,
+    \item temporización de fallos y recuperaciones,
+    \item creación y cierre de pausas automáticas,
+    \item cálculo específico de métricas de producción,
+    \item flujo de paso a proceso manual posterior.
+\end{itemize}
+
+\subsubsection{Información Pendiente de Completar}
+
+Aunque el análisis ya permite definir una base funcional sólida, todavía quedan varios puntos por concretar con mayor nivel de detalle:
+
+\begin{itemize}
+    \item código interno definitivo de la máquina,
+    \item topics MQTT exactos,
+    \item payloads reales completos,
+    \item catálogo definitivo de parámetros visibles y persistidos,
+    \item reglas exactas de mapeo y transformación,
+    \item definición final de las alertas visibles en pantalla,
+    \item requisitos de interfaz específicos para Cremer.
+\end{itemize}
+
+\subsubsection{Criterio de Implementación}
+
+Cremer se utilizará como primer caso funcional completo dentro de la solución .NET. El criterio recomendado es implementar primero su flujo de extremo a extremo, desde recepción MQTT hasta persistencia, cálculo y consulta, manteniendo separada la lógica específica de esta máquina respecto al núcleo común de la plataforma.
+
+Este enfoque permitirá validar de forma temprana la arquitectura propuesta y preparar la incorporación ordenada de futuras máquinas dentro del mismo sistema.

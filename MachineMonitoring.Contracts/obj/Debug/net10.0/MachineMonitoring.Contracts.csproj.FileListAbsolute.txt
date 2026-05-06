@@ -1,0 +1,12 @@
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\bin\Debug\net10.0\MachineMonitoring.Contracts.deps.json
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\bin\Debug\net10.0\MachineMonitoring.Contracts.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\bin\Debug\net10.0\MachineMonitoring.Contracts.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.AssemblyInfoInputs.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.AssemblyInfo.cs
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.csproj.CoreCompileInputs.cache
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\refint\MachineMonitoring.Contracts.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\ref\MachineMonitoring.Contracts.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Contracts\obj\Debug\net10.0\MachineMonitoring.Contracts.csproj.AssemblyReference.cache

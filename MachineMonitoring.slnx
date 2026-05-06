@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/deploy/" />
+  <Folder Name="/deploy/database/" />
+  <Folder Name="/deploy/docker/" />
+  <Folder Name="/deploy/environments/" />
+  <Folder Name="/docs/" />
+  <Folder Name="/docs/architecture/" />
+  <Folder Name="/docs/decisions/" />
+  <Folder Name="/docs/machine-definitions/" />
+  <Folder Name="/src/">
+    <Project Path="MachineMonitoring.Api/MachineMonitoring.Api.csproj" />
+    <Project Path="MachineMonitoring.Application/MachineMonitoring.Application.csproj" />
+    <Project Path="MachineMonitoring.Contracts/MachineMonitoring.Contracts.csproj" />
+    <Project Path="MachineMonitoring.Domain/MachineMonitoring.Domain.csproj" />
+    <Project Path="MachineMonitoring.Infrastructure/MachineMonitoring.Infrastructure.csproj" />
+    <Project Path="MachineMonitoring.Worker/MachineMonitoring.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="MachineMonitoring.Api.Tests/MachineMonitoring.Api.Tests.csproj" />
+    <Project Path="MachineMonitoring.Application.Tests/MachineMonitoring.Application.Tests.csproj" />
+    <Project Path="MachineMonitoring.Domain.Tests/MachineMonitoring.Domain.Tests.csproj" />
+    <Project Path="MachineMonitoring.Infrastructure.Tests/MachineMonitoring.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>

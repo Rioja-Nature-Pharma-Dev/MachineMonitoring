@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"F:\\\\Dev\\\\Monitorizacion\\\\MachineMonitoring\" | Where-Object { $_.Name -match '\\\\.\\(sln|md|json|yml|yaml\\)$' })",
+      "PowerShell(dir \"F:\\\\Dev\\\\Monitorizacion\\\\MachineMonitoring\\\\MachineMonitoring.Application\\\\UseCases\" -Recurse | Where-Object { -not $_.PSIsContainer })"
+    ]
+  }
+}
