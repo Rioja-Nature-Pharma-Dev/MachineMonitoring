@@ -8,17 +8,20 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MachineMonitoring.Application\MachineMonitoring.Application.csproj" />
+    <ProjectReference Include="..\MachineMonitoring.Infrastructure\MachineMonitoring.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Consumers\" />
     <Folder Include="Jobs\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Processors\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.7" />
+    <PackageReference Include="MQTTnet" Version="4.3.2.930" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.7" />
   </ItemGroup>
 
 </Project>
