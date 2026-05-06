@@ -10,6 +10,7 @@ public interface IProductionOrderRepository
     Task<IReadOnlyList<ProductionOrder>> GetByStatusAsync(
         ProductionOrderStatus status,
         CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<ProductionOrder>> GetAllAsync(CancellationToken cancellationToken = default);
     Task<bool> ExistsByOrderCodeAsync(string orderCode, CancellationToken cancellationToken = default);
     Task AddAsync(ProductionOrder order, CancellationToken cancellationToken = default);
     Task UpdateAsync(ProductionOrder order, CancellationToken cancellationToken = default);

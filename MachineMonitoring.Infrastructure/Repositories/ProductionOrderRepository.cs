@@ -27,6 +27,9 @@ public sealed class ProductionOrderRepository : IProductionOrderRepository
             .Where(x => x.Status == status)
             .ToListAsync(cancellationToken);
 
+    public async Task<IReadOnlyList<ProductionOrder>> GetAllAsync(CancellationToken cancellationToken = default) =>
+        await _dbContext.ProductionOrders.ToListAsync(cancellationToken);
+
     public Task<bool> ExistsByOrderCodeAsync(string orderCode, CancellationToken cancellationToken = default) =>
         _dbContext.ProductionOrders.AnyAsync(x => x.OrderCode == orderCode, cancellationToken);
 
