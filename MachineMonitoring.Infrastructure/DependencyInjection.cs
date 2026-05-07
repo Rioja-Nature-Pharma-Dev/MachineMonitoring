@@ -46,6 +46,7 @@ public static class DependencyInjection
         services.AddScoped<ListCalculatedMetricsHandler>();
         services.AddScoped<GetMachineConfigurationHandler>();
         services.AddScoped<EvaluateMetricsHandler>();
+        services.AddScoped<IngestSensorReadingHandler>();
 
         // Formula evaluator
         services.AddSingleton<FormulaEvaluator>();

@@ -1,9 +1,7 @@
 Usando la configuración de inicio de MachineMonitoring.Api\Properties\launchSettings.json...
 Compilando...
-F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\Entities\MachineReadingNormalized.cs(14,13): warning CS8618: El elemento propiedad "ParameterCode" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador "required'"o declarar el propiedad como un valor que acepta valores NULL. [F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\MachineMonitoring.Domain.csproj]
-F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\Entities\MachineReadingNormalized.cs(14,13): warning CS8618: El elemento propiedad "Value" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de agregar el modificador "required'"o declarar el propiedad como un valor que acepta valores NULL. [F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Domain\MachineMonitoring.Domain.csproj]
 info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-      Executed DbCommand (32ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      Executed DbCommand (31ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
       SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
       FROM machines AS m
       WHERE m."Code" = @code
@@ -16,3 +14,230 @@ info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machines ("Id", "Code", "CreatedAt", "Description", "Name", "Status", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid), @p6='?' (DbType = Decimal), @p7='?' (DbType = Decimal), @p8='?', @p9='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_parameter_definitions ("Id", "Code", "DataType", "IsCalculated", "IsRequired", "MachineId", "MaxValue", "MinValue", "Name", "Unit")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid), @p6='?' (DbType = Decimal), @p7='?' (DbType = Decimal), @p8='?', @p9='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_parameter_definitions ("Id", "Code", "DataType", "IsCalculated", "IsRequired", "MachineId", "MaxValue", "MinValue", "Name", "Unit")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid), @p6='?' (DbType = Decimal), @p7='?' (DbType = Decimal), @p8='?', @p9='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_parameter_definitions ("Id", "Code", "DataType", "IsCalculated", "IsRequired", "MachineId", "MaxValue", "MinValue", "Name", "Unit")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_input_sources ("Id", "CreatedAt", "EndpointOrTopic", "IsEnabled", "MachineId", "Name", "SourceType")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?', @p6='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_input_mappings ("Id", "ExternalFieldPath", "InputSourceId", "IsEnabled", "MachineId", "ParameterCode", "TransformExpression")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_input_sources ("Id", "CreatedAt", "EndpointOrTopic", "IsEnabled", "MachineId", "Name", "SourceType")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?', @p6='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_input_mappings ("Id", "ExternalFieldPath", "InputSourceId", "IsEnabled", "MachineId", "ParameterCode", "TransformExpression")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?', @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_input_sources ("Id", "CreatedAt", "EndpointOrTopic", "IsEnabled", "MachineId", "Name", "SourceType")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Guid), @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?', @p6='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO machine_input_mappings ("Id", "ExternalFieldPath", "InputSourceId", "IsEnabled", "MachineId", "ParameterCode", "TransformExpression")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid), @p6='?', @p7='?', @p8='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO calculated_metric_definitions ("Id", "Code", "CreatedAt", "FormulaExpression", "IsEnabled", "MachineId", "Name", "Unit", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Guid), @p6='?', @p7='?', @p8='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO calculated_metric_definitions ("Id", "Code", "CreatedAt", "FormulaExpression", "IsEnabled", "MachineId", "Name", "Unit", "UpdatedAt")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."Code", c."CreatedAt", c."FormulaExpression", c."IsEnabled", c."MachineId", c."Name", c."Unit", c."UpdatedAt"
+      FROM calculated_metric_definitions AS c
+      WHERE c."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."DataType", m."IsCalculated", m."IsRequired", m."MachineId", m."MaxValue", m."MinValue", m."Name", m."Unit"
+      FROM machine_parameter_definitions AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT c."Id", c."Code", c."CreatedAt", c."FormulaExpression", c."IsEnabled", c."MachineId", c."Name", c."Unit", c."UpdatedAt"
+      FROM calculated_metric_definitions AS c
+      WHERE c."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."Id" = @id
+      LIMIT 1

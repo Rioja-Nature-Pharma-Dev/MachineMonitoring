@@ -161,10 +161,6 @@ public sealed class MachineConfigurationController : ControllerBase
     /// <summary>
     /// Evalua todas las metricas calculadas con los valores actuales
     /// </summary>
-    /// <remarks>
-    /// Envia los valores de los parametros y el sistema calculara
-    /// todas las metricas configuradas (incluyendo dependencias entre ellas).
-    /// </remarks>
     [HttpPost("evaluate-metrics")]
     public async Task<ActionResult<EvaluateMetricsResultDto>> EvaluateMetrics(
         string machineCode,
@@ -184,4 +180,33 @@ public sealed class MachineConfigurationController : ControllerBase
             return BadRequest(new { error = ex.Message });
         }
     }
+
+    /// <summary>
+    /// Ingestar lectura de sensor (GPIO/MQTT) con transformacion automatica
+    /// </summary>
+    /// <remarks>
+    /// Recibe valor crudo del sensor, aplica la transformacion configurada
+    /// y devuelve el valor del parametro
+    /// </remarks>
+    [HttpPost("sensor-data")]
+    public async Task<ActionResult<IngestSensorReadingResult>> IngestSensorData(
+        string machineCode,
+        [FromBody] IngestSensorReadingRequest request,
+        [FromServices] IngestSensorReadingHandler handler,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            var result = await handler.HandleAsync(
+                new IngestSensorReadingCommand(machineCode, request.GpioTopic, request.RawValue),
+                cancellationToken);
+            return result != null ? Ok(result) : NotFound();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
 }
+
+public sealed record IngestSensorReadingRequest(string GpioTopic, decimal RawValue);
