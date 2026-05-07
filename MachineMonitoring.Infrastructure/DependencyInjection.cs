@@ -4,7 +4,6 @@ using MachineMonitoring.Application.Handlers.MachineConfiguration;
 using MachineMonitoring.Application.Services;
 using MachineMonitoring.Infrastructure.Persistence;
 using MachineMonitoring.Infrastructure.Persistence.Repositories;
-using MachineMonitoring.Infrastructure.Repositories;
 using MachineMonitoring.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -29,11 +28,11 @@ public static class DependencyInjection
         services.AddScoped<IProductionManualProcessRepository, ProductionManualProcessRepository>();
         services.AddScoped<IMachineRepository, MachineRepository>();
 
-        // Configuration repositories (in-memory, singleton for persistence across requests)
-        services.AddSingleton<IMachineParameterDefinitionRepository, InMemoryMachineParameterDefinitionRepository>();
-        services.AddSingleton<IMachineInputMappingRepository, InMemoryMachineInputMappingRepository>();
-        services.AddSingleton<IMachineInputSourceRepository, InMemoryMachineInputSourceRepository>();
-        services.AddSingleton<ICalculatedMetricDefinitionRepository, InMemoryCalculatedMetricDefinitionRepository>();
+        // Configuration repositories (EF Core, persisted in PostgreSQL)
+        services.AddScoped<IMachineParameterDefinitionRepository, MachineParameterDefinitionRepository>();
+        services.AddScoped<IMachineInputMappingRepository, MachineInputMappingRepository>();
+        services.AddScoped<IMachineInputSourceRepository, MachineInputSourceRepository>();
+        services.AddScoped<ICalculatedMetricDefinitionRepository, CalculatedMetricDefinitionRepository>();
 
         // Configuration handlers
         services.AddScoped<AddParameterDefinitionHandler>();
