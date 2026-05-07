@@ -1,6 +1,7 @@
 ﻿using MachineMonitoring.Application.Abstractions.Repositories;
 using MachineMonitoring.Application.Abstractions.Services;
 using MachineMonitoring.Application.Handlers.MachineConfiguration;
+using MachineMonitoring.Application.Services;
 using MachineMonitoring.Infrastructure.Persistence;
 using MachineMonitoring.Infrastructure.Persistence.Repositories;
 using MachineMonitoring.Infrastructure.Repositories;
@@ -45,6 +46,10 @@ public static class DependencyInjection
         services.AddScoped<GetCalculatedMetricHandler>();
         services.AddScoped<ListCalculatedMetricsHandler>();
         services.AddScoped<GetMachineConfigurationHandler>();
+        services.AddScoped<EvaluateMetricsHandler>();
+
+        // Formula evaluator
+        services.AddSingleton<FormulaEvaluator>();
 
         services.AddSingleton<IClock, SystemClock>();
 

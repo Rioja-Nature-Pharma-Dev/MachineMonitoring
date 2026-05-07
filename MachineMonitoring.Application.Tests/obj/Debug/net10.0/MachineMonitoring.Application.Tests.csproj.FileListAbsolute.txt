@@ -105,3 +105,11 @@ F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\obj\
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\obj\Debug\net10.0\MachineMonitoring.Application.Tests.pdb
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\obj\Debug\net10.0\MachineMonitoring.Application.Tests.genruntimeconfig.cache
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\obj\Debug\net10.0\ref\MachineMonitoring.Application.Tests.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\.msCoverageSourceRootsMapping_MachineMonitoring.Application.Tests
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\CoverletSourceRootsMapping_MachineMonitoring.Application.Tests
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\MachineMonitoring.Application.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\MachineMonitoring.Contracts.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\MachineMonitoring.Domain.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\MachineMonitoring.Application.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\MachineMonitoring.Contracts.pdb
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Application.Tests\bin\Debug\net10.0\MachineMonitoring.Domain.pdb

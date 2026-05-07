@@ -157,4 +157,31 @@ public sealed class MachineConfigurationController : ControllerBase
             cancellationToken);
         return result != null ? Ok(result) : NotFound();
     }
+
+    /// <summary>
+    /// Evalua todas las metricas calculadas con los valores actuales
+    /// </summary>
+    /// <remarks>
+    /// Envia los valores de los parametros y el sistema calculara
+    /// todas las metricas configuradas (incluyendo dependencias entre ellas).
+    /// </remarks>
+    [HttpPost("evaluate-metrics")]
+    public async Task<ActionResult<EvaluateMetricsResultDto>> EvaluateMetrics(
+        string machineCode,
+        [FromBody] Dictionary<string, decimal> inputValues,
+        [FromServices] EvaluateMetricsHandler handler,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            var result = await handler.HandleAsync(
+                new EvaluateMetricsCommand(machineCode, inputValues),
+                cancellationToken);
+            return result != null ? Ok(result) : NotFound();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
 }

@@ -584,6 +584,47 @@
         "build": {
           "build/net8.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "MachineMonitoring.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "MachineMonitoring.Contracts": "1.0.0",
+          "MachineMonitoring.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "compile": {
+          "bin/placeholder/MachineMonitoring.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MachineMonitoring.Application.dll": {}
+        }
+      },
+      "MachineMonitoring.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "compile": {
+          "bin/placeholder/MachineMonitoring.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MachineMonitoring.Contracts.dll": {}
+        }
+      },
+      "MachineMonitoring.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "compile": {
+          "bin/placeholder/MachineMonitoring.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MachineMonitoring.Domain.dll": {}
+        }
       }
     }
   },
@@ -1437,10 +1478,26 @@
         "xunit.runner.visualstudio.3.1.4.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "MachineMonitoring.Application/1.0.0": {
+      "type": "project",
+      "path": "../MachineMonitoring.Application/MachineMonitoring.Application.csproj",
+      "msbuildProject": "../MachineMonitoring.Application/MachineMonitoring.Application.csproj"
+    },
+    "MachineMonitoring.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MachineMonitoring.Contracts/MachineMonitoring.Contracts.csproj",
+      "msbuildProject": "../MachineMonitoring.Contracts/MachineMonitoring.Contracts.csproj"
+    },
+    "MachineMonitoring.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MachineMonitoring.Domain/MachineMonitoring.Domain.csproj",
+      "msbuildProject": "../MachineMonitoring.Domain/MachineMonitoring.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "MachineMonitoring.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 10.0.7",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "coverlet.collector >= 6.0.4",
@@ -1478,9 +1535,12 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\MachineMonitoring.Application.csproj": {
+              "projectPath": "F:\\Dev\\Monitorizacion\\MachineMonitoring\\MachineMonitoring.Application\\MachineMonitoring.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1497,7 +1557,6 @@
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {

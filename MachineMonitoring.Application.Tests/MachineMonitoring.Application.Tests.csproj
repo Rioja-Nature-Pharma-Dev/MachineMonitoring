@@ -19,4 +19,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MachineMonitoring.Application\MachineMonitoring.Application.csproj" />
+  </ItemGroup>
+
 </Project>

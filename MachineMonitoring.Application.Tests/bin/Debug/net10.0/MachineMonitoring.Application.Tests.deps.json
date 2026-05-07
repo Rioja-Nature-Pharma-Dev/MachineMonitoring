@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "MachineMonitoring.Application.Tests/1.0.0": {
         "dependencies": {
+          "MachineMonitoring.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore": "10.0.7",
           "Microsoft.NET.Test.Sdk": "17.14.1",
           "xunit": "2.9.3"
@@ -440,6 +441,41 @@
             "fileVersion": "2.9.3.0"
           }
         }
+      },
+      "MachineMonitoring.Application/1.0.0": {
+        "dependencies": {
+          "MachineMonitoring.Contracts": "1.0.0",
+          "MachineMonitoring.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "runtime": {
+          "MachineMonitoring.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MachineMonitoring.Contracts/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "runtime": {
+          "MachineMonitoring.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MachineMonitoring.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.7"
+        },
+        "runtime": {
+          "MachineMonitoring.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -595,6 +631,21 @@
       "sha512": "sha512-yMb6vMESlSrE3Wfj7V6cjQ3S4TXdXpRqYeNEI3zsX31uTsGMJjEw6oD5F5u1cHnMptjhEECnmZSsPxB6ChZHDQ==",
       "path": "xunit.extensibility.execution/2.9.3",
       "hashPath": "xunit.extensibility.execution.2.9.3.nupkg.sha512"
+    },
+    "MachineMonitoring.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MachineMonitoring.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MachineMonitoring.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
