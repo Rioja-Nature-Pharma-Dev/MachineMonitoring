@@ -129,3 +129,4 @@ F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api\obj\Debug\net10.0\
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api\obj\Debug\net10.0\MachineMonitoring.Api.pdb
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api\obj\Debug\net10.0\MachineMonitoring.Api.genruntimeconfig.cache
 F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api\obj\Debug\net10.0\ref\MachineMonitoring.Api.dll
+F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api\bin\Debug\net10.0\MQTTnet.dll

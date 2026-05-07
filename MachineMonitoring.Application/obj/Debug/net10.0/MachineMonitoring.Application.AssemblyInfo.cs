@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MachineMonitoring.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe28c45ee176029caf3cb3ab9e62bc55388ec80c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e8e123f1deef5e0fe9b836a2634b52012a9f0b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MachineMonitoring.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MachineMonitoring.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

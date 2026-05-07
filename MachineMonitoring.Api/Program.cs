@@ -1,5 +1,6 @@
 using MachineMonitoring.Infrastructure;
 using MachineMonitoring.Api.Seeds;
+using MachineMonitoring.Api.Mqtt;
 using MachineMonitoring.Application.Abstractions.Repositories;
 using MachineMonitoring.Application.Abstractions.Services;
 
@@ -9,6 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddInfrastructure(builder.Configuration);
+
+// MQTT dynamic listener - reads configured GPIO mappings and processes messages
+builder.Services.AddHostedService<DynamicMqttListener>();
 
 var app = builder.Build();
 

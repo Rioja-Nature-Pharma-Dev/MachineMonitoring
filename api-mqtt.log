@@ -1,0 +1,256 @@
+Usando la configuración de inicio de MachineMonitoring.Api\Properties\launchSettings.json...
+Compilando...
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (36ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5021
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: F:\Dev\Monitorizacion\MachineMonitoring\MachineMonitoring.Api
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Connecting to 192.168.20.82:1883...
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Connected.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Subscribed to: linea-premium/gpio/25
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Subscribed to: linea-premium/gpio/26
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Subscribed to: linea-premium/gpio/27
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Message: linea-premium/gpio/25 = 850
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] LINEA-PREMIUM | TEMP_MOTOR = 85 (raw=850, transform=VALUE / 10)
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Message: linea-premium/gpio/26 = 400
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] LINEA-PREMIUM | PRESSURE = 200.0 (raw=400, transform=VALUE * 0.5)
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Message: linea-premium/gpio/27 = 120
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] LINEA-PREMIUM | SPEED = 120 (raw=120, transform=VALUE)
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Message: linea-premium/gpio/25 = 950
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] LINEA-PREMIUM | TEMP_MOTOR = 95 (raw=950, transform=VALUE / 10)
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Message: linea-premium/gpio/26 = 300
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] LINEA-PREMIUM | PRESSURE = 150.0 (raw=300, transform=VALUE * 0.5)
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] Message: linea-premium/gpio/27 = 130
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Id" = @id
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@code='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."Code", m."CreatedAt", m."Description", m."Name", m."Status", m."UpdatedAt"
+      FROM machines AS m
+      WHERE m."Code" = @code
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@machineId='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."ExternalFieldPath", m."InputSourceId", m."IsEnabled", m."MachineId", m."ParameterCode", m."TransformExpression"
+      FROM machine_input_mappings AS m
+      WHERE m."MachineId" = @machineId
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@topic='?'], CommandType='Text', CommandTimeout='30']
+      SELECT m."Id", m."CreatedAt", m."EndpointOrTopic", m."IsEnabled", m."MachineId", m."Name", m."SourceType"
+      FROM machine_input_sources AS m
+      WHERE m."EndpointOrTopic" = @topic
+      LIMIT 1
+info: MachineMonitoring.Api.Mqtt.DynamicMqttListener[0]
+      [MQTT] LINEA-PREMIUM | SPEED = 130 (raw=130, transform=VALUE)
